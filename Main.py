@@ -20,8 +20,8 @@ class Main():
             print(browser.title)
             user_xpath = '/html/body/main/section/div/div/section/section/section/form/section/div[1]/div[1]/input'
             pass_xpath = '/html/body/main/section/div/div/section/section/section/form/section/div[2]/div[1]/div/input'
-            browser.find_element_by_xpath(user_xpath).send_keys('tomas@rysol.com')
-            browser.find_element_by_xpath(pass_xpath).send_keys('3MYjhGim58oJ')
+            browser.find_element_by_xpath(user_xpath).send_keys(sys.argv[2])
+            browser.find_element_by_xpath(pass_xpath).send_keys(sys.argv[3])
             browser.find_element_by_xpath('//*[@id="submit-login"]').click()
             print('Loggin in')
             return browser
