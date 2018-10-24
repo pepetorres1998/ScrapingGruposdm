@@ -3,9 +3,11 @@
 ## Installation
 
 ###Prerequisites
+
 You need to have installed Python3, and download the geckodriver, and have it on 'user/local/bin/'
 
 ###Install
+
 You will need to install python packages with pip.
 To install everything you need you can run:
 
